@@ -1,0 +1,22 @@
+:root{
+   --blanco: #ffffff;
+   --primario:#F1C40F;
+   --oscuro: #212121;
+   --secuendario: #0097A7;
+   --gris: #74737C;
+}
+
+html {
+   box-sizing: border-box;
+/* practica esencial */
+}
+*,*:before, *:after {
+   box-sizing: inherit;
+
+}
+
+
+body {
+  font-size: 16px;
+  background-image: linear-gradient(to top, #8ECCEA, white);
+}

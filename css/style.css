@@ -1,0 +1,350 @@
+/* seudo selector, nos permite definir variables */
+/* paleta de colores generales */
+/* colores segun manual de marca */
+:root{
+   --blanco: #ffffff;
+   --primario:#F1C40F;
+   --oscuro: #212121;
+   --secuendario: #0097A7;
+   --gris: #74737C;
+}
+/* estilos globales */
+html {
+	box-sizing: border-box;
+/* practica esencial */
+}
+*,*:before, *:after {
+	box-sizing: inherit;
+}
+
+body{
+	font-size: 16px;
+	font-family: "Krub", sans-serif;
+
+	background-image: linear-gradient(to top, #8ECCEA, white);
+
+	/*background-image: linear-gradient(to top, white, yellow); */
+      /*background-image: radial-gradient(circle, red, yellow,green);*/
+}
+h1{
+     font-size: 2.8 rem;
+}
+h2{
+    font-size: 2,8 rem;
+}
+
+h3{
+    font-size: 2,4 rem;
+}
+h1,h2,h3 {
+	text-align: center;
+
+}
+
+/*
+h1 {	
+		color:#CD2400;
+		text-align: center;
+		text-emphasis: uppercase; 
+		}
+	*/
+
+/*
+h2 {	
+		color:#F50000;
+		text-align: center;
+	
+	}	*/
+
+
+
+
+span{
+	font-size: 0.9rem;
+	color:#250D08 ;
+	}
+
+.boton{
+  background-color: var(--secuendario);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  border:none;
+}
+.boton:hover{
+	cursor: pointer;
+}
+
+/* clases con etiquetas*/
+.contenedor{ 
+    max-width:80rem; 
+     margin-top:0rem;
+    margin-right:auto;
+    margin-bottom:0rem;
+    margin-left:auto; 
+
+    /*margin: 0rem auto 0rem auto; */
+   /* margin: 0rem auto;*/
+
+}
+.sombra{
+	/*box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);*/
+	-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+
+      background-color: var(--blanco);
+      padding: 2rem;
+      border-radius: 1rem;
+
+}
+.titulo{
+	   
+  		 font-weight: 700;
+         font-style: normal;
+	     color:var(--oscuro);
+	     text-align: center;
+	     text-emphasis: uppercase;
+
+
+        }
+.titulo span{
+      color:red  
+}
+.titulo span{
+      color:rgb(23,35,93);
+}
+
+
+
+.subtitulo{
+		color:var(--primario);
+		text-align: center;
+    
+
+ /* seccion servicios*/    } 
+
+.servicio{
+	    text-align: center;
+
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+
+	    
+         }
+ .servicio h3 {
+          color: var(--secuendario);
+          font-weight: normal;
+ }
+
+ .servicio p {
+          color: var(--oscuro);
+          text-align: center;
+          line-height: 2;
+ }
+
+.servicio .iconos{
+	height: 150px;
+	width: 150px;
+
+	background-color: var(--primario);
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+/* estilos para el formulario*/
+
+.formulario{
+	background-color: var(--gris);
+	width: min(50rem, 100%);
+
+	padding: 2rem;
+	border-radius: 1rem;
+
+	margin: 0 auto;
+}
+ .formulario fieldset{
+      border: none;
+
+ }
+
+ .formulario legend{
+       color: var(--primario);
+       text-align: center;
+       font-size: 1.6rem;
+
+       text-transform: uppercase;
+       font-weight: 700;
+       margin-bottom: 2rem;
+        }
+/* para dividir campos de contacto*/
+
+
+.campo label{
+	color: var(--blanco);
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+	display: block ;
+}
+.campo texarea{
+	height: 17rem;
+
+}
+.input-text{
+      width: 100%;
+      border:none;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 0.5;
+
+}
+
+.enviar{
+	width: 100%;
+}
+.nav-bg{
+	background-color: var(--secuendario);
+
+}
+/* navegacion*/
+.navegacion-principal {
+	
+	display: flex;
+      flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.navegacion-principal a{
+	color: var(--blanco);
+	text-decoration: none;
+	font-size: 2rem;
+      font-weight: bold;
+      padding: 1rem;
+
+      text-aling:center;
+
+
+}
+/* seudo clase*/
+.navegacion-principal a:hover{
+	background-color: var(--primario) ;
+	display:inline;
+	color:var(--oscuro);
+
+}
+/*hero*/
+
+.hero{
+   background-image:url(../image/hero.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height:450px;
+   padding: 20px;
+   position: relative;
+
+   margin-bottom: 2rem;
+} 
+
+.contenido-hero{
+	position: absolute;
+	background-color: rgba(0, 0, 0, .7); 
+/* background-color: rgb(0 0 0 /80%);*/
+
+	left: 0rem;
+	right: 0rem;
+	top: 0rem;
+	bottom: 0rem;
+ /*alinear horizontal y verticalmente */  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+	justify-content: center;
+}
+
+
+.contenido-hero h2,.contenido-hero p{
+
+	color: var(--blanco);
+}
+
+
+
+
+
+/* diseño responsive */
+/* dispositivo celular */
+@media (min-width: 480px){
+/* lsita de selectores de etiqueta o clase a modifica */
+	body{
+		background-color: ;
+	}
+
+}
+.footer{
+	text-align: center;
+}
+
+/* tablets */
+@media (min-width: 768px) {
+    body{
+		background-color: ;
+	}
+	.navegacion-principal{
+      flex-direction: row;
+      justify-content: space-between;
+	}
+      .navegacion-principal a {
+      	font-size: 2rem;
+
+
+      }
+   .servicios{
+  display: grid;
+  /* hacer columnas 
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 300px 500px;
+  grid: 300px 500px / 300px 300px;
+  100/3: 33.3 para 3 columnas
+  100/4: 25  para 4 columnas*/
+  
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  column-gap: 1 rem;
+}
+
+.contenedor-campos{ 
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto 20rem;
+      column-gap: 1rem;
+ }
+
+.campo{
+      margin-bottom: 1rem;
+
+}
+/*mover el mensaje abajo*/
+
+
+.campo:nth-child(3),.campo:nth-child(4){
+    grid-column:1 / 3;
+}
+
+
+
+/*pantalla  mas grande resolucion*/
+@media (min-width: 1024px) {
+    body{
+		background-color: ;
+	}
+}
